@@ -1,15 +1,14 @@
 # Projeto com Múltiplas Páginas
 
 Estrutura profissional com três páginas organizadas:
-- Login
+- Login → Página principal
 - Registro
 - Home
 
-Cada página possui:
+Cada página/pasta possui:
 - `index.html`
 - `style.css`
 - `script.js`
-
 
 ## Outras pastas
 
