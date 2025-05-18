@@ -1,6 +1,6 @@
-# Projeto com Múltiplas Páginas
+# Projeto com Múltiplas Páginas - By Nierale
 
-Estrutura profissional com três páginas organizadas:
+Testando estrutura profissional com três páginas organizadas:
 - Login → Página principal
 - Registro
 - Home
