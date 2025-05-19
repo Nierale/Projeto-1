@@ -25,11 +25,17 @@
             <div class="input_box">
                 <input type="password" id="senha" class="input_field" placeholder="Senha">
             </div>
-            <button onclick="cadastrar()">Cadastrar</button><br>
-            <button onclick="window.location.href='../login/index.html'">Cancelar</button>
+            <div class="input_box">
+                <button type="submit" class="input_submit" onclick="cadastrar()">Cadastrar</button>
+            </div>
+            <div class="input_box">
+                <button type="submit" class="input_submit"
+                    onclick="window.location.href='../login/index.html'">Cancelar</button>
+            </div>
             <p id="mensagem"></p>
         </div>
     </div>
+    <script src="../assets/js/global.js"></script>
     <script src="script.js"></script>
 </body>
 

@@ -1,3 +1,8 @@
+async function wait() {
+    await pause(2000);
+    window.location.href = "../login/index.html";
+}
+
 function cadastrar() {
     const usuario = document.getElementById("usuario").value;
     const senha = document.getElementById("senha").value;
@@ -15,4 +20,5 @@ function cadastrar() {
 
     localStorage.setItem("usuarioCadastrado", JSON.stringify(dados));
     document.getElementById("mensagem").innerText = "Cadastro realizado com sucesso!";
+    wait();
 }
