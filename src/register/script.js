@@ -4,18 +4,18 @@ async function wait() {
 }
 
 function cadastrar() {
-    const usuario = document.getElementById("usuario").value;
-    const senha = document.getElementById("senha").value;
+    const user = document.getElementById("user").value;
+    const password = document.getElementById("password").value;
 
-    if (!usuario || !senha) {
+    if (!user || !password) {
         document.getElementById("mensagem").innerText = "Preencha todos os campos.";
         return;
     }
 
     // Salva no LocalStorage
     const dados = {
-        usuario: usuario,
-        senha: senha
+        user: user,
+        password: password
     };
 
     localStorage.setItem("usuarioCadastrado", JSON.stringify(dados));
