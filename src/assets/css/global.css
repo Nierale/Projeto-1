@@ -60,6 +60,10 @@ body {
     transition: .3s;
 }
 
+.input_submit:hover {
+    background: var(--second-color);
+}
+
 .header {
     position: absolute;
     top: 0;
