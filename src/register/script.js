@@ -11,14 +11,14 @@ function cadastrar() {
         document.getElementById("mensagem").innerText = "Preencha todos os campos.";
         return;
     }
-
-    // Salva no LocalStorage
-    const dados = {
-        user: user,
-        password: password
-    };
-
-    localStorage.setItem("usuarioCadastrado", JSON.stringify(dados));
-    document.getElementById("mensagem").innerText = "Cadastro realizado com sucesso!";
-    wait();
+    // Salvar no firebase
+    firebase.auth().createUserWithEmailAndPassword(user, password)
+        .then((userCredential) => {
+            document.getElementById("mensagem").innerText = "Cadastro realizado com sucesso!";
+            console.log(userCredential.user);
+            wait();
+        })
+        .catch((error) => {
+            document.getElementById("mensagem").innerText = "Erro: " + error.message;
+        });
 }

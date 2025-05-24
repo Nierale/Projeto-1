@@ -12,22 +12,33 @@
     --black-color: #000000;
 }
 
-body {
-    background-image: url("../img/por-do-sol.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+/*body {
+
+}*/
 
 .wrapper {
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.1);
-    /*backdrop-filter: blur(0px);*/
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/werehouse.webp");
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    /* desfoca o fundo */
+    z-index: -1;
 }
 
 .input_box {
