@@ -10,11 +10,8 @@
     --primary-color: #c6c3c3;
     --second-color: #ffffff;
     --black-color: #000000;
+    --red-color: #dd0000;
 }
-
-/*body {
-
-}*/
 
 .wrapper {
     width: 100vw;
@@ -36,7 +33,7 @@
     background-image: url("../img/werehouse.webp");
     background-size: cover;
     background-position: center;
-    filter: blur(3px);
+    filter: blur(2px);
     /* desfoca o fundo */
     z-index: -1;
 }
@@ -58,6 +55,7 @@
     border: 2px solid var(--primary-color);
     border-radius: 30px;
     outline: none;
+    margin-bottom: 0px;
 }
 
 .input_submit {
