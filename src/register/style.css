@@ -1,3 +1,4 @@
+/* Caixa de campos para registro */
 .register_box {
     position: relative;
     width: 450px;
@@ -10,6 +11,7 @@
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* Margem abaixo dos campos de texto Usuário e Senha */
 #user {
     margin-bottom: 10px;
 }
@@ -18,6 +20,13 @@
     margin-bottom: 10px;
 }
 
+#mensagem {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Texto em cima da caixa de texto */
 .label {
     position: absolute;
     top: 18px;
@@ -37,6 +46,7 @@
     padding: 0 10px
 }
 
+/* Icones da caixa de texto */
 .icon {
     position: absolute;
     top: 18px;
@@ -44,7 +54,7 @@
     font-size: 20px;
 }
 
-/*-- Formatação de erros --*/
+/* Formatação de erros */
 
 .border-styleerror {
     border-color: var(--red-color);
@@ -53,4 +63,11 @@
 .input_field:focus~.bg-styleerror,
 .input_field:valid~.bg-styleerror {
     background-color: var(--red-color);
+}
+
+.mensagem {
+    color: var(--red-color);
+    /*margin-top: 20px;
+    font-weight: bold;
+    text-align: center;*/
 }
