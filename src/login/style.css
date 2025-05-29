@@ -44,7 +44,11 @@
     display: flex;
     justify-content: space-between;
     font-size: 15px;
+}
 
+#mensagemlogin {
+    text-align: center;
+    padding-top: 15px;
 }
 
 .register {
