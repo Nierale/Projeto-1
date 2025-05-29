@@ -58,6 +58,8 @@ function cadastrar() {
     }
 
     // Cadastro ok, redirecionamento para Login
+    localStorage.setItem("app_user", user);
+    localStorage.setItem("app_password", password);
     document.getElementById("mensagem").classList.remove("mensagem");
     document.getElementById("mensagem").innerText = "Cadastro realizado com sucesso!";
     wait();
