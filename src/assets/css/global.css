@@ -33,8 +33,8 @@
     background-image: url("../img/werehouse.webp");
     background-size: cover;
     background-position: center;
-    filter: blur(2px);
     /* desfoca o fundo */
+    filter: blur(2px);
     z-index: -1;
 }
 

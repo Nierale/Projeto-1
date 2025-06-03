@@ -3,7 +3,7 @@
     position: relative;
     width: 450px;
     backdrop-filter: blur(10px);
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(100, 100, 100, 0.5);
     border: 2px solid var(--primary-color);
     border-radius: 15px;
     padding: 7.5em 2.5em 4em 2.5em;
