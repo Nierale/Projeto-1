@@ -15,11 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <td>${prod.unidade}</td>
         <td>${prod.marca}</td>
         <td>${prod.categoria}</td>
-        <td>${prod.localizacao}</td>
         <td>R$ ${prod.custo || 0}</td>
         <td>R$ ${prod.preco || 0}</td>
         <td>${prod.fornecedor}</td>
-        <td>${prod.validade || "-"}</td>
       `;
             tabela.appendChild(tr);
         });
@@ -35,12 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
             marca: form.marca.value,
             unidade: form.unidade.value,
             quantidade: form.quantidade.value,
-            minimo: form.minimo.value,
-            localizacao: form.localizacao.value,
             custo: form.custo.value,
             preco: form.preco.value,
             fornecedor: form.fornecedor.value,
-            validade: form.validade.value
         };
 
         const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
