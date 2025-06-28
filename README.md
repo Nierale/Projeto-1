@@ -8,9 +8,9 @@ Testando estrutura profissional com três páginas organizadas:
 - Home
 
 Cada página/pasta possui:
-- `index.html`
-- `style.css`
-- `script.js`
+- `html`
+- `css`
+- `js`
 
 ## Outras pastas
 
