@@ -1,6 +1,6 @@
 async function wait() {
     await pause(2000);
-    window.location.href = "../login/index.html";
+    window.location.href = "../login/login.html";
 }
 
 // Validação do formulário de cadastro
@@ -93,13 +93,13 @@ function show_pass(event) {
 
     if (input.type === "password") {
         input.type = "text";
-        icon.classList.remove("bi-key");
+        icon.classList.remove("bi-eye");
         icon.classList.add("bi-eye-slash");
     }
     else {
         input.type = "password";
         icon.classList.remove("bi-eye-slash");
-        icon.classList.add("bi-key");
+        icon.classList.add("bi-eye");
     }
 }
 function show_repass(event) {
@@ -108,12 +108,12 @@ function show_repass(event) {
 
     if (input.type === "password") {
         input.type = "text";
-        icon.classList.remove("bi-key");
+        icon.classList.remove("bi-eye");
         icon.classList.add("bi-eye-slash");
     }
     else {
         input.type = "password";
         icon.classList.remove("bi-eye-slash");
-        icon.classList.add("bi-key");
+        icon.classList.add("bi-eye");
     }
 }

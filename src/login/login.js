@@ -1,6 +1,6 @@
 async function wait() {
     await pause(2000);
-    window.location.href = "../home/index.html"
+    window.location.href = "../home/home.html"
 }
 
 function login() {
@@ -20,12 +20,12 @@ function show_pass(event) {
 
     if (input.type === "password") {
         input.type = "text";
-        icon.classList.remove("bi-lock");
-        icon.classList.add("bi-unlock");
+        icon.classList.remove("bi-eye");
+        icon.classList.add("bi-eye-slash");
     }
     else {
         input.type = "password";
-        icon.classList.remove("bi-unlock");
-        icon.classList.add("bi-lock");
+        icon.classList.remove("bi-eye-slash");
+        icon.classList.add("bi-eye");
     }
 }
